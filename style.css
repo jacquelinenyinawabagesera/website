@@ -5,36 +5,67 @@ body{
 .main-container{
 background-color: rgb(255, 255, 255);
 width: 100%;
+max-width: 800px;
 border: 1px solid rgb(255, 255, 255);
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+flex-grow: 1;
 /* margin: auto; */
 }
-.main-container{
-    flex-grow: 1;
-}
+@media only screen and (max-width: 600px) {
+    .main-container {
+      max-width: 500px;
+    }
+  }
 footer{
 bottom: 0;
 padding: 20px;
 display: flex;
 justify-content: space-between;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    float: right;
+ .nav{
+    /* display: flex;
+    justify-content: space-between; */
+    /* padding: 20px; */
+    /* float: right; */
 }
 .nav ul li{
     list-style: none;
     display: inline;
     padding:20px;
+   /* justify-content: flex-end; */
+   cursor: pointer;
 }
 .second-section{
     display: flex;
     justify-content: space-between;
 }
+html { font-size: 16px; }
+
+@media (max-width: 550px) {
+  p { font-size: 1em; }
+}
+
+@media (min-width: 551px) {
+  p { font-size: 1.25rem; }
+}
+/* @media only screen and (max-width: 550px){
+    body.gradient.animate--hover-default h1, h2 {
+        font-size: 22px;
+    }
+    } */
+
+/* .second-section img{
+max-width: 100%;
+} */
+ /* .second-section{
+    height: 50vh;
+ }
+ .second-section img{
+    width: 100%;
+    height: 100%;
+ } */
 
 
 
